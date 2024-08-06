@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("cp/main.c");
+    printf("main.c");
     return 0;
 }
