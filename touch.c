@@ -1,7 +1,7 @@
 #include <errno.h>
 #include <fcntl.h>
-#include <unistd.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main() {
     int fd;
