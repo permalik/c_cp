@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <unistd.h>
 
+// TODO: create multiple files
+// TODO:
+
 int create_file(char *filename) {
     int fd;
     const char *filepath = filename;
@@ -32,10 +35,21 @@ int create_file(char *filename) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        printf("input filename");
+        printf("Input minimum one file.");
     } else {
-        create_file(argv[1]);
+        for (int i = 1; i <= argc; i++) {
+            create_file(argv[i]);
+        }
     }
+    // if (argc < 2) {
+    //     printf("Input minimum one file.");
+    // } else if (argc == 2) {
+    //     create_file(argv[1]);
+    // } else {
+    //     for (int i = 0; i < argc; i++) {
+    //         create_file(argv[i]);
+    //     }
+    // }
 
     return 0;
 }
